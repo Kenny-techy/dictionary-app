@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+body {
+  background-color: rgb(255, 204, 109);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  background-color: #ffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+  padding: 35px;
+}
+
+.container h1 {
+  /* font-size: 2em; */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  flex: 1;
+  border-radius: 5px;
+  border: 2px solid rgb(202, 202, 202, .4);
+  outline: none;
+  transition: .2s;
+}
+
+input:focus {
+  box-shadow: 0 0 5px rgb(255, 204, 109);
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: rgb(255, 204, 109);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.search-container button:hover {
+  opacity: .8;
+}
+
+.word-container {
+  margin-top: 15px;
+}
+
+#playPronunciationBtn {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: rgb(255, 204, 109);
+  cursor: pointer;
+  transition: .2s;
+}
+
+#playPronunciationBtn:hover {
+  transform: scale(1.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word-definition,
+.example-sentence {
+  color: rgb(48, 48, 48);
+}
+
+.word-type {
+  color: rgb(48, 48, 48, .5);
+  margin: 5px 0;
+}
+
+.example-sentence {
+  /* width: 300px; */
+  font-style: italic;
+  position: relative;
+}
+
+.example-sentence-container {
+  margin-top: 15px;
+  padding: 0 8px;
+  border-left: 4px solid rgb(255, 204, 109);
+}
+
+.info-text {
+  text-align: center;
+  margin: 15px 0;
+}
